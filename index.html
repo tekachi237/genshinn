@@ -411,35 +411,6 @@
   function valider(btn, bonneReponse, message) {
     const result = btn.parentElement.parentElement.querySelector('.resultat');
     if (!result) return;
-    if (bonneReponse) {
-      result.textContent = "✅ " + message;
-      result.style.color = "#2ecc71";
-      score++;
-      document.getElementById("score").textContent = score;
-    } else {
-      result.textContent = "❌ " + message;
-      result.style.color = "#e74c3c";
-    }
-  }
-
-  function retourMenu() {
-    document.querySelectorAll('.jeu').forEach(j => j.classList.remove('visible'));
-  }
-</script>
-  <script>
-  let score = 0;
-
-  function afficherJeu(id) {
-    document.querySelectorAll('.jeu').forEach(j => j.classList.remove('visible'));
-    const cible = document.getElementById(id);
-    if (cible) {
-      cible.classList.add('visible');
-    }
-  }
-
-  function valider(btn, bonneReponse, message) {
-    const result = btn.parentElement.parentElement.querySelector('.resultat');
-    if (!result) return;
 
     if (bonneReponse) {
       result.textContent = "✅ " + message;
