@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini-jeux Genshin - Quiz SE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="counter">Pierres : <span id="score">0</span> <img src="images/pierre_fatalite.png" alt="Pierre"></div>
+  <h1>🎮 Quiz Genshin - Systèmes d'exploitation</h1>
+  <div class="menu">
+    <a href="#" onclick="afficherJeu('jeu1')">1. Défi 1</a>
+    <a href="#" onclick="afficherJeu('jeu2')">2. Défi 2</a>
+    <a href="#" onclick="afficherJeu('jeu3')">3. Défi 3</a>
+    <a href="#" onclick="afficherJeu('jeu4')">4. Défi 4</a>
+    <a href="#" onclick="afficherJeu('jeu5')">5. Défi 5</a>
+    <a href="#" onclick="afficherJeu('jeu6')">6. Défi 6</a>
+    <a href="#" onclick="afficherJeu('jeu7')">7. Défi 7</a>
+    <a href="#" onclick="afficherJeu('jeu8')">8. Défi 8</a>
+    <a href="#" onclick="afficherJeu('jeu9')">9. Défi 9</a>
+    <a href="#" onclick="afficherJeu('jeu10')">10. Défi 10</a>
+    <a href="#" onclick="afficherJeu('jeu11')">11. Défi 11</a>
+    <a href="#" onclick="afficherJeu('jeu12')">12. Défi 12</a>
+    <a href="#" onclick="afficherJeu('jeu13')">13. Défi 13</a>
+    <a href="#" onclick="afficherJeu('jeu14')">14. Défi 14</a>
+    <a href="#" onclick="afficherJeu('jeu15')">15. Défi 15</a>
+    <a href="#" onclick="afficherJeu('jeu16')">16. Défi 16</a>
+    <a href="#" onclick="afficherJeu('jeu17')">17. Défi 17</a>
+    <a href="#" onclick="afficherJeu('jeu18')">18. Défi 18</a>
+    <a href="#" onclick="afficherJeu('jeu19')">19. Défi 19</a>
+    <a href="#" onclick="afficherJeu('jeu20')">20. Défi 20</a>
+    <a href="#" onclick="afficherJeu('jeu21')">21. Défi 21</a>
+    <a href="#" onclick="afficherJeu('jeu22')">22. Défi 22</a>
+    <a href="#" onclick="afficherJeu('jeu23')">23. Défi 23</a>
+    <a href="#" onclick="afficherJeu('jeu24')">24. Défi 24</a>
+    <a href="#" onclick="afficherJeu('jeu25')">25. Défi 25</a>
+    <a href="#" onclick="afficherJeu('jeu26')">26. Défi 26</a>
+    <a href="#" onclick="afficherJeu('jeu27')">27. Défi 27</a>
+    <a href="#" onclick="afficherJeu('jeu28')">28. Défi 28</a>
+    <a href="#" onclick="afficherJeu('jeu29')">29. Défi 29</a>
+    <a href="#" onclick="afficherJeu('jeu30')">30. Défi 30</a>
+    <a href="#" onclick="afficherJeu('jeu31')">31. Défi 31</a>
+    <a href="#" onclick="afficherJeu('jeu32')">32. Défi 32</a>
+    <a href="#" onclick="afficherJeu('jeu33')">33. Défi 33</a>
+    <a href="#" onclick="afficherJeu('jeu34')">34. Défi 34</a>
+    <a href="#" onclick="afficherJeu('jeu35')">35. Défi 35</a>
+  </div>
+
+  <div id="jeu1" class="jeu">
+    <div class="question">1. Quel est le rôle principal du système d’exploitation ?</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Gérer les ressources et fournir une interface utilisateur')">Gérer les ressources et fournir une interface utilisateur</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Gérer les ressources et fournir une interface utilisateur. Voir Page 2.')">Afficher uniquement des images</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu2" class="jeu">
+    <div class="question">2. Qu’est-ce qu’un système multitâche ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Un SE qui exécute plusieurs programmes en parallèle. Voir Page 3.')">Un SE qui gère uniquement les fichiers</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Un SE qui exécute plusieurs programmes en parallèle')">Un SE qui exécute plusieurs programmes en parallèle</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu3" class="jeu">
+    <div class="question">3. Le langage machine est-il facile à utiliser ?</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Non, il est trop primitif')">Non, il est trop primitif</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Non, il est trop primitif. Voir Page 7.')">Oui, c'est très simple</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu4" class="jeu">
+    <div class="question">4. Quelle est la différence entre L1 et L2 ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : L1 = langage machine, L2 = abstraction. Voir Page 8.')">L2 est plus bas niveau que L1</button>
+      <button onclick="valider(this, true, 'Bonne réponse : L1 = langage machine, L2 = abstraction')">L1 = langage machine, L2 = abstraction</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu5" class="jeu">
+    <div class="question">5. Un interpréteur génère-t-il un programme en L1 ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Non, il exécute ligne par ligne. Voir Page 9.')">Oui, il compile tout d’un coup</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Non, il exécute ligne par ligne')">Non, il exécute ligne par ligne</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu6" class="jeu">
+    <div class="question">6. Qu’est-ce qu’une machine virtuelle ?</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Une simulation logicielle d'une machine')">Une simulation logicielle d'une machine</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Une simulation logicielle d'une machine. Voir Page 10.')">Un disque dur chiffré</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu7" class="jeu">
+    <div class="question">7. Combien de niveaux dans un ordi moderne ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : 6. Voir Page 11.')">3</button>
+      <button onclick="valider(this, true, 'Bonne réponse : 6')">6</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu8" class="jeu">
+    <div class="question">8. Rôle de la microarchitecture ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Gérer registres et ALU. Voir Page 12.')">Contrôler les utilisateurs</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Gérer registres et ALU')">Gérer registres et ALU</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu9" class="jeu">
+    <div class="question">9. Pourquoi un assembleur ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Traduire le langage d’assemblage. Voir Page 13.')">Créer un fichier Word</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Traduire le langage d’assemblage')">Traduire le langage d’assemblage</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu10" class="jeu">
+    <div class="question">10. Langage compilé ?</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : C')">C</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : C. Voir Page 14.')">HTML</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu11" class="jeu">
+    <div class="question">11. Rôle du noyau ?</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Gérer l'accès aux ressources')">Gérer l'accès aux ressources</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Gérer l'accès aux ressources. Voir Page 15.')">Afficher des animations</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu12" class="jeu">
+    <div class="question">12. Segmentation ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Découper la mémoire logiquement. Voir Page 25.')">Fusionner les fichiers</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Découper la mémoire logiquement')">Découper la mémoire logiquement</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu13" class="jeu">
+    <div class="question">13. Pagination ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Découper la mémoire en pages. Voir Page 26.')">Changer les polices</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Découper la mémoire en pages')">Découper la mémoire en pages</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu14" class="jeu">
+    <div class="question">14. Appel système ?</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Interaction entre appli et SE')">Interaction entre appli et SE</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Interaction entre appli et SE. Voir Page 15.')">Changer le mot de passe</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu15" class="jeu">
+    <div class="question">15. Mémoire virtuelle ?</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Simuler + de mémoire')">Simuler + de mémoire</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Simuler + de mémoire. Voir Page 27.')">Nettoyer le disque</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu16" class="jeu">
+    <div class="question">16. Multitâche coopératif ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Processus qui coopèrent. Voir Page 19.')">Processus qui se bloquent</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Processus qui coopèrent')">Processus qui coopèrent</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu17" class="jeu">
+    <div class="question">17. Multitâche préemptif ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : SE interrompt les processus. Voir Page 19.')">Processus ignorent le SE</button>
+      <button onclick="valider(this, true, 'Bonne réponse : SE interrompt les processus')">SE interrompt les processus</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu18" class="jeu">
+    <div class="question">18. E/S synchrone ?</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Attend la fin de l’opération')">Attend la fin de l’opération</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Attend la fin de l’opération. Voir Page 28.')">Reçoit un email</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu19" class="jeu">
+    <div class="question">19. E/S asynchrone ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Ne bloque pas le processus. Voir Page 28.')">Bloque tous les processus</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Ne bloque pas le processus')">Ne bloque pas le processus</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu20" class="jeu">
+    <div class="question">20. Système temps réel ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Réagir en temps garanti. Voir Page 30.')">Faire des sauvegardes</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Réagir en temps garanti')">Réagir en temps garanti</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu21" class="jeu">
+    <div class="question">21. Spooling ?</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Gérer périphériques partagés')">Gérer périphériques partagés</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Gérer périphériques partagés. Voir Page 29.')">Supprimer des fichiers</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu22" class="jeu">
+    <div class="question">22. SE sécurisé ?</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Limiter les accès')">Limiter les accès</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Limiter les accès. Voir Page 17.')">Supprimer les logs</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu23" class="jeu">
+    <div class="question">23. SE distribué ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Machines coopèrent. Voir Page 20.')">Tous les fichiers sont locaux</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Machines coopèrent')">Machines coopèrent</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu24" class="jeu">
+    <div class="question">24. Table de pages ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Traduction logique/physique. Voir Page 26.')">Changer les permissions</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Traduction logique/physique')">Traduction logique/physique</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu25" class="jeu">
+    <div class="question">25. Système de fichiers ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Organiser/stocker les données. Voir Page 31.')">Changer la RAM</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Organiser/stocker les données')">Organiser/stocker les données</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu26" class="jeu">
+    <div class="question">26. Un fichier est identifié par ?</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Nom et chemin')">Nom et chemin</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Nom et chemin. Voir Page 31.')">Taille et date</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu27" class="jeu">
+    <div class="question">27. CLI ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Ligne de commande. Voir Page 33.')">Interface graphique</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Ligne de commande')">Ligne de commande</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu28" class="jeu">
+    <div class="question">28. Shell graphique ?</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Interface visuelle')">Interface visuelle</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Interface visuelle. Voir Page 33.')">Terminal texte brut</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu29" class="jeu">
+    <div class="question">29. Ordonnancement ?</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Définit ordre des processus')">Définit ordre des processus</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Définit ordre des processus. Voir Page 18.')">Crée des pages web</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu30" class="jeu">
+    <div class="question">30. Tourniquet ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Partage en tranches de temps. Voir Page 19.')">Exécute un seul à la fois</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Partage en tranches de temps')">Partage en tranches de temps</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu31" class="jeu">
+    <div class="question">31. Mémoire centrale ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Volatile et rapide. Voir Page 24.')">Stockage permanent</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Volatile et rapide')">Volatile et rapide</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu32" class="jeu">
+    <div class="question">32. Mémoire cache ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Très rapide, petite. Voir Page 24.')">Grande et lente</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Très rapide, petite')">Très rapide, petite</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu33" class="jeu">
+    <div class="question">33. Interpréteur ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Exécute ligne par ligne. Voir Page 14.')">Compile tout</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Exécute ligne par ligne')">Exécute ligne par ligne</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu34" class="jeu">
+    <div class="question">34. Compilateur ?</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Traduit tout le code. Voir Page 14.')">Interprète à la volée</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Traduit tout le code')">Traduit tout le code</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu35" class="jeu">
+    <div class="question">35. Python est ?</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Langage interprété')">Langage interprété</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Langage interprété. Voir Page 14.')">Langage compilé uniquement</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+
+<script>
+  let score = 0;
+
+  function afficherJeu(id) {
+    document.querySelectorAll('.jeu').forEach(j => j.classList.remove('visible'));
+    const cible = document.getElementById(id);
+    if (cible) {
+      cible.classList.add('visible');
+    }
+  }
+
+  function valider(btn, bonneReponse, message) {
+    const result = btn.parentElement.parentElement.querySelector('.resultat');
+    if (!result) return;
+    if (bonneReponse) {
+      result.textContent = "✅ " + message;
+      result.style.color = "#2ecc71";
+      score++;
+      document.getElementById("score").textContent = score;
+    } else {
+      result.textContent = "❌ " + message;
+      result.style.color = "#e74c3c";
+    }
+  }
+
+  function retourMenu() {
+    document.querySelectorAll('.jeu').forEach(j => j.classList.remove('visible'));
+  }
+</script>
+
+</body>
+</html>
