@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini-jeux Genshin - Quiz SE</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .jeu { display: none; }
+    .jeu.visible { display: block; }
+  </style>
+</head>
+<body>
+  <div id="counter">Pierres : <span id="score">0</span> <img src="images/pierre_fatalite.png" alt="Pierre"></div>
+  <h1>🎮 Quiz Genshin - Systèmes d'exploitation</h1>
+
+  <div class="menu">
+    <h2>📘 CCM - Partie 1</h2>
+    <a href="#" onclick="afficherPartie('partie1')">Afficher les défis Partie 1</a>
+    <div id="partie1" class="sous-menu" style="display: none;">
+      <a href="#" onclick="afficherJeu('jeu1')">Défi 1</a>
+      <a href="#" onclick="afficherJeu('jeu2')">Défi 2</a>
+    </div>
+  </div>
+
+  <div id="jeu1" class="jeu">
+    <div class="question">1. Défi 1 - Partie 1 : Question exemple 1</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 1')">Bonne réponse 1</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 1. Voir Page 1.')">Mauvaise réponse 1</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu2" class="jeu">
+    <div class="question">2. Défi 2 - Partie 1 : Question exemple 2</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 2')">Bonne réponse 2</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 2. Voir Page 2.')">Mauvaise réponse 2</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="score_final" class="jeu">
+    <h2>🎉 Quiz terminé !</h2>
+    <p>Tu as gagné <strong><span id="final_score">0</span></strong> pierres de fatalité !</p>
+    <a href="#" onclick="retourMenu()">⬅️ Retour au menu principal</a>
+  </div>
+
+  <script>
+    let score = 0;
+
+    function afficherJeu(id) {
+      document.querySelectorAll('.jeu').forEach(j => j.classList.remove('visible'));
+      const cible = document.getElementById(id);
+      if (cible) {
+        cible.classList.add('visible');
+      }
+    }
+
+    function valider(btn, bonneReponse, message) {
+      const result = btn.parentElement.parentElement.querySelector('.resultat');
+      if (!result) return;
+
+      if (bonneReponse) {
+        result.textContent = "✅ " + message;
+        result.style.color = "#2ecc71";
+        score++;
+        document.getElementById("score").textContent = score;
+      } else {
+        result.textContent = "❌ " + message;
+        result.style.color = "#e74c3c";
+      }
+
+      setTimeout(() => {
+        const current = btn.closest(".jeu");
+        if (!current) return;
+
+        const id = current.id;
+        const currentNum = parseInt(id.replace("jeu", ""));
+        const nextNum = currentNum + 1;
+        const next = document.getElementById("jeu" + nextNum);
+
+        if (next) {
+          current.classList.remove("visible");
+          next.classList.add("visible");
+        } else {
+          current.classList.remove("visible");
+          const scoreFinal = document.getElementById("score_final");
+          if (scoreFinal) {
+            document.getElementById("final_score").textContent = score;
+            scoreFinal.classList.add("visible");
+          }
+        }
+      }, 1000);
+    }
+
+    function retourMenu() {
+      document.querySelectorAll('.jeu').forEach(j => j.classList.remove('visible'));
+    }
+
+    function afficherPartie(id) {
+      const bloc = document.getElementById(id);
+      bloc.style.display = bloc.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>
