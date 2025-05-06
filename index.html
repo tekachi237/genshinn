@@ -1,0 +1,821 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini-jeux Genshin - Quiz SE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="counter">Pierres : <span id="score">0</span> <img src="images/pierre_fatalite.png" alt="Pierre"></div>
+  <h1>🎮 Quiz Genshin - Systèmes d'exploitation</h1>
+  <div class="menu">
+    <h2>📘 CCM - Partie 1</h2>
+    <a href="#" onclick="afficherJeu('jeu1')">1. Défi 1 - Partie 1 : Question exemple 1</a>
+<a href="#" onclick="afficherJeu('jeu2')">2. Défi 2 - Partie 1 : Question exemple 2</a>
+<a href="#" onclick="afficherJeu('jeu3')">3. Défi 3 - Partie 1 : Question exemple 3</a>
+<a href="#" onclick="afficherJeu('jeu4')">4. Défi 4 - Partie 1 : Question exemple 4</a>
+<a href="#" onclick="afficherJeu('jeu5')">5. Défi 5 - Partie 1 : Question exemple 5</a>
+<a href="#" onclick="afficherJeu('jeu6')">6. Défi 6 - Partie 1 : Question exemple 6</a>
+<a href="#" onclick="afficherJeu('jeu7')">7. Défi 7 - Partie 1 : Question exemple 7</a>
+<a href="#" onclick="afficherJeu('jeu8')">8. Défi 8 - Partie 1 : Question exemple 8</a>
+<a href="#" onclick="afficherJeu('jeu9')">9. Défi 9 - Partie 1 : Question exemple 9</a>
+<a href="#" onclick="afficherJeu('jeu10')">10. Défi 10 - Partie 1 : Question exemple 10</a>
+<a href="#" onclick="afficherJeu('jeu11')">11. Défi 11 - Partie 1 : Question exemple 11</a>
+<a href="#" onclick="afficherJeu('jeu12')">12. Défi 12 - Partie 1 : Question exemple 12</a>
+<a href="#" onclick="afficherJeu('jeu13')">13. Défi 13 - Partie 1 : Question exemple 13</a>
+<a href="#" onclick="afficherJeu('jeu14')">14. Défi 14 - Partie 1 : Question exemple 14</a>
+<a href="#" onclick="afficherJeu('jeu15')">15. Défi 15 - Partie 1 : Question exemple 15</a>
+<a href="#" onclick="afficherJeu('jeu16')">16. Défi 16 - Partie 1 : Question exemple 16</a>
+<a href="#" onclick="afficherJeu('jeu17')">17. Défi 17 - Partie 1 : Question exemple 17</a>
+<a href="#" onclick="afficherJeu('jeu18')">18. Défi 18 - Partie 1 : Question exemple 18</a>
+<a href="#" onclick="afficherJeu('jeu19')">19. Défi 19 - Partie 1 : Question exemple 19</a>
+<a href="#" onclick="afficherJeu('jeu20')">20. Défi 20 - Partie 1 : Question exemple 20</a>
+<a href="#" onclick="afficherJeu('jeu21')">21. Défi 21 - Partie 1 : Question exemple 21</a>
+<a href="#" onclick="afficherJeu('jeu22')">22. Défi 22 - Partie 1 : Question exemple 22</a>
+<a href="#" onclick="afficherJeu('jeu23')">23. Défi 23 - Partie 1 : Question exemple 23</a>
+<a href="#" onclick="afficherJeu('jeu24')">24. Défi 24 - Partie 1 : Question exemple 24</a>
+<a href="#" onclick="afficherJeu('jeu25')">25. Défi 25 - Partie 1 : Question exemple 25</a>
+<a href="#" onclick="afficherJeu('jeu26')">26. Défi 26 - Partie 1 : Question exemple 26</a>
+<a href="#" onclick="afficherJeu('jeu27')">27. Défi 27 - Partie 1 : Question exemple 27</a>
+<a href="#" onclick="afficherJeu('jeu28')">28. Défi 28 - Partie 1 : Question exemple 28</a>
+<a href="#" onclick="afficherJeu('jeu29')">29. Défi 29 - Partie 1 : Question exemple 29</a>
+<a href="#" onclick="afficherJeu('jeu30')">30. Défi 30 - Partie 1 : Question exemple 30</a>
+<a href="#" onclick="afficherJeu('jeu31')">31. Défi 31 - Partie 1 : Question exemple 31</a>
+<a href="#" onclick="afficherJeu('jeu32')">32. Défi 32 - Partie 1 : Question exemple 32</a>
+<a href="#" onclick="afficherJeu('jeu33')">33. Défi 33 - Partie 1 : Question exemple 33</a>
+<a href="#" onclick="afficherJeu('jeu34')">34. Défi 34 - Partie 1 : Question exemple 34</a>
+<a href="#" onclick="afficherJeu('jeu35')">35. Défi 35 - Partie 1 : Question exemple 35</a>
+<a href="#" onclick="afficherJeu('jeu36')">36. 
+    <h2>📗 CCM - Partie 2</h2>
+    Défi 36 - Partie 2 : Question exemple 36</a>
+<a href="#" onclick="afficherJeu('jeu37')">37. Défi 37 - Partie 2 : Question exemple 37</a>
+<a href="#" onclick="afficherJeu('jeu38')">38. Défi 38 - Partie 2 : Question exemple 38</a>
+<a href="#" onclick="afficherJeu('jeu39')">39. Défi 39 - Partie 2 : Question exemple 39</a>
+<a href="#" onclick="afficherJeu('jeu40')">40. Défi 40 - Partie 2 : Question exemple 40</a>
+<a href="#" onclick="afficherJeu('jeu41')">41. Défi 41 - Partie 2 : Question exemple 41</a>
+<a href="#" onclick="afficherJeu('jeu42')">42. Défi 42 - Partie 2 : Question exemple 42</a>
+<a href="#" onclick="afficherJeu('jeu43')">43. Défi 43 - Partie 2 : Question exemple 43</a>
+<a href="#" onclick="afficherJeu('jeu44')">44. Défi 44 - Partie 2 : Question exemple 44</a>
+<a href="#" onclick="afficherJeu('jeu45')">45. Défi 45 - Partie 2 : Question exemple 45</a>
+<a href="#" onclick="afficherJeu('jeu46')">46. Défi 46 - Partie 2 : Question exemple 46</a>
+<a href="#" onclick="afficherJeu('jeu47')">47. Défi 47 - Partie 2 : Question exemple 47</a>
+<a href="#" onclick="afficherJeu('jeu48')">48. Défi 48 - Partie 2 : Question exemple 48</a>
+<a href="#" onclick="afficherJeu('jeu49')">49. Défi 49 - Partie 2 : Question exemple 49</a>
+<a href="#" onclick="afficherJeu('jeu50')">50. Défi 50 - Partie 2 : Question exemple 50</a>
+<a href="#" onclick="afficherJeu('jeu51')">51. Défi 51 - Partie 2 : Question exemple 51</a>
+<a href="#" onclick="afficherJeu('jeu52')">52. Défi 52 - Partie 2 : Question exemple 52</a>
+<a href="#" onclick="afficherJeu('jeu53')">53. Défi 53 - Partie 2 : Question exemple 53</a>
+<a href="#" onclick="afficherJeu('jeu54')">54. Défi 54 - Partie 2 : Question exemple 54</a>
+<a href="#" onclick="afficherJeu('jeu55')">55. Défi 55 - Partie 2 : Question exemple 55</a>
+<a href="#" onclick="afficherJeu('jeu56')">56. Défi 56 - Partie 2 : Question exemple 56</a>
+<a href="#" onclick="afficherJeu('jeu57')">57. Défi 57 - Partie 2 : Question exemple 57</a>
+<a href="#" onclick="afficherJeu('jeu58')">58. Défi 58 - Partie 2 : Question exemple 58</a>
+<a href="#" onclick="afficherJeu('jeu59')">59. Défi 59 - Partie 2 : Question exemple 59</a>
+<a href="#" onclick="afficherJeu('jeu60')">60. Défi 60 - Partie 2 : Question exemple 60</a>
+<a href="#" onclick="afficherJeu('jeu61')">61. Défi 61 - Partie 2 : Question exemple 61</a>
+<a href="#" onclick="afficherJeu('jeu62')">62. Défi 62 - Partie 2 : Question exemple 62</a>
+<a href="#" onclick="afficherJeu('jeu63')">63. Défi 63 - Partie 2 : Question exemple 63</a>
+<a href="#" onclick="afficherJeu('jeu64')">64. Défi 64 - Partie 2 : Question exemple 64</a>
+<a href="#" onclick="afficherJeu('jeu65')">65. Défi 65 - Partie 2 : Question exemple 65</a>
+<a href="#" onclick="afficherJeu('jeu66')">66. Défi 66 - Partie 2 : Question exemple 66</a>
+<a href="#" onclick="afficherJeu('jeu67')">67. Défi 67 - Partie 2 : Question exemple 67</a>
+<a href="#" onclick="afficherJeu('jeu68')">68. Défi 68 - Partie 2 : Question exemple 68</a>
+<a href="#" onclick="afficherJeu('jeu69')">69. Défi 69 - Partie 2 : Question exemple 69</a>
+<a href="#" onclick="afficherJeu('jeu70')">70. Défi 70 - Partie 2 : Question exemple 70</a>
+
+  </div>
+
+  <div id="jeu1" class="jeu">
+    <div class="question">1. Défi 1 - Partie 1 : Question exemple 1</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 1')">Bonne réponse 1</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 1. Voir Page 1.')">Mauvaise réponse 1</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu2" class="jeu">
+    <div class="question">2. Défi 2 - Partie 1 : Question exemple 2</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 2')">Bonne réponse 2</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 2. Voir Page 2.')">Mauvaise réponse 2</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu3" class="jeu">
+    <div class="question">3. Défi 3 - Partie 1 : Question exemple 3</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 3. Voir Page 3.')">Mauvaise réponse 3</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 3')">Bonne réponse 3</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu4" class="jeu">
+    <div class="question">4. Défi 4 - Partie 1 : Question exemple 4</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 4')">Bonne réponse 4</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 4. Voir Page 4.')">Mauvaise réponse 4</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu5" class="jeu">
+    <div class="question">5. Défi 5 - Partie 1 : Question exemple 5</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 5')">Bonne réponse 5</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 5. Voir Page 5.')">Mauvaise réponse 5</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu6" class="jeu">
+    <div class="question">6. Défi 6 - Partie 1 : Question exemple 6</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 6. Voir Page 6.')">Mauvaise réponse 6</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 6')">Bonne réponse 6</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu7" class="jeu">
+    <div class="question">7. Défi 7 - Partie 1 : Question exemple 7</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 7')">Bonne réponse 7</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 7. Voir Page 7.')">Mauvaise réponse 7</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu8" class="jeu">
+    <div class="question">8. Défi 8 - Partie 1 : Question exemple 8</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 8. Voir Page 8.')">Mauvaise réponse 8</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 8')">Bonne réponse 8</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu9" class="jeu">
+    <div class="question">9. Défi 9 - Partie 1 : Question exemple 9</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 9. Voir Page 9.')">Mauvaise réponse 9</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 9')">Bonne réponse 9</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu10" class="jeu">
+    <div class="question">10. Défi 10 - Partie 1 : Question exemple 10</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 10')">Bonne réponse 10</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 10. Voir Page 10.')">Mauvaise réponse 10</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu11" class="jeu">
+    <div class="question">11. Défi 11 - Partie 1 : Question exemple 11</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 11. Voir Page 11.')">Mauvaise réponse 11</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 11')">Bonne réponse 11</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu12" class="jeu">
+    <div class="question">12. Défi 12 - Partie 1 : Question exemple 12</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 12')">Bonne réponse 12</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 12. Voir Page 12.')">Mauvaise réponse 12</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu13" class="jeu">
+    <div class="question">13. Défi 13 - Partie 1 : Question exemple 13</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 13')">Bonne réponse 13</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 13. Voir Page 13.')">Mauvaise réponse 13</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu14" class="jeu">
+    <div class="question">14. Défi 14 - Partie 1 : Question exemple 14</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 14')">Bonne réponse 14</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 14. Voir Page 14.')">Mauvaise réponse 14</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu15" class="jeu">
+    <div class="question">15. Défi 15 - Partie 1 : Question exemple 15</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 15')">Bonne réponse 15</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 15. Voir Page 15.')">Mauvaise réponse 15</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu16" class="jeu">
+    <div class="question">16. Défi 16 - Partie 1 : Question exemple 16</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 16. Voir Page 16.')">Mauvaise réponse 16</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 16')">Bonne réponse 16</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu17" class="jeu">
+    <div class="question">17. Défi 17 - Partie 1 : Question exemple 17</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 17')">Bonne réponse 17</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 17. Voir Page 17.')">Mauvaise réponse 17</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu18" class="jeu">
+    <div class="question">18. Défi 18 - Partie 1 : Question exemple 18</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 18. Voir Page 18.')">Mauvaise réponse 18</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 18')">Bonne réponse 18</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu19" class="jeu">
+    <div class="question">19. Défi 19 - Partie 1 : Question exemple 19</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 19. Voir Page 19.')">Mauvaise réponse 19</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 19')">Bonne réponse 19</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu20" class="jeu">
+    <div class="question">20. Défi 20 - Partie 1 : Question exemple 20</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 20')">Bonne réponse 20</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 20. Voir Page 20.')">Mauvaise réponse 20</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu21" class="jeu">
+    <div class="question">21. Défi 21 - Partie 1 : Question exemple 21</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 21. Voir Page 21.')">Mauvaise réponse 21</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 21')">Bonne réponse 21</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu22" class="jeu">
+    <div class="question">22. Défi 22 - Partie 1 : Question exemple 22</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 22')">Bonne réponse 22</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 22. Voir Page 22.')">Mauvaise réponse 22</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu23" class="jeu">
+    <div class="question">23. Défi 23 - Partie 1 : Question exemple 23</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 23')">Bonne réponse 23</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 23. Voir Page 23.')">Mauvaise réponse 23</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu24" class="jeu">
+    <div class="question">24. Défi 24 - Partie 1 : Question exemple 24</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 24')">Bonne réponse 24</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 24. Voir Page 24.')">Mauvaise réponse 24</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu25" class="jeu">
+    <div class="question">25. Défi 25 - Partie 1 : Question exemple 25</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 25')">Bonne réponse 25</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 25. Voir Page 25.')">Mauvaise réponse 25</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu26" class="jeu">
+    <div class="question">26. Défi 26 - Partie 1 : Question exemple 26</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 26')">Bonne réponse 26</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 26. Voir Page 26.')">Mauvaise réponse 26</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu27" class="jeu">
+    <div class="question">27. Défi 27 - Partie 1 : Question exemple 27</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 27. Voir Page 27.')">Mauvaise réponse 27</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 27')">Bonne réponse 27</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu28" class="jeu">
+    <div class="question">28. Défi 28 - Partie 1 : Question exemple 28</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 28')">Bonne réponse 28</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 28. Voir Page 28.')">Mauvaise réponse 28</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu29" class="jeu">
+    <div class="question">29. Défi 29 - Partie 1 : Question exemple 29</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 29. Voir Page 29.')">Mauvaise réponse 29</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 29')">Bonne réponse 29</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu30" class="jeu">
+    <div class="question">30. Défi 30 - Partie 1 : Question exemple 30</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 30. Voir Page 30.')">Mauvaise réponse 30</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 30')">Bonne réponse 30</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu31" class="jeu">
+    <div class="question">31. Défi 31 - Partie 1 : Question exemple 31</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 31')">Bonne réponse 31</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 31. Voir Page 31.')">Mauvaise réponse 31</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu32" class="jeu">
+    <div class="question">32. Défi 32 - Partie 1 : Question exemple 32</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 32')">Bonne réponse 32</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 32. Voir Page 32.')">Mauvaise réponse 32</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu33" class="jeu">
+    <div class="question">33. Défi 33 - Partie 1 : Question exemple 33</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 33')">Bonne réponse 33</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 33. Voir Page 33.')">Mauvaise réponse 33</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu34" class="jeu">
+    <div class="question">34. Défi 34 - Partie 1 : Question exemple 34</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 34. Voir Page 34.')">Mauvaise réponse 34</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 34')">Bonne réponse 34</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu35" class="jeu">
+    <div class="question">35. Défi 35 - Partie 1 : Question exemple 35</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 35')">Bonne réponse 35</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 35. Voir Page 35.')">Mauvaise réponse 35</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu36" class="jeu">
+    <div class="question">36. Défi 36 - Partie 2 : Question exemple 36</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 36')">Bonne réponse 36</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 36. Voir Page 71.')">Mauvaise réponse 36</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu37" class="jeu">
+    <div class="question">37. Défi 37 - Partie 2 : Question exemple 37</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 37')">Bonne réponse 37</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 37. Voir Page 72.')">Mauvaise réponse 37</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu38" class="jeu">
+    <div class="question">38. Défi 38 - Partie 2 : Question exemple 38</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 38')">Bonne réponse 38</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 38. Voir Page 73.')">Mauvaise réponse 38</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu39" class="jeu">
+    <div class="question">39. Défi 39 - Partie 2 : Question exemple 39</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 39. Voir Page 74.')">Mauvaise réponse 39</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 39')">Bonne réponse 39</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu40" class="jeu">
+    <div class="question">40. Défi 40 - Partie 2 : Question exemple 40</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 40')">Bonne réponse 40</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 40. Voir Page 75.')">Mauvaise réponse 40</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu41" class="jeu">
+    <div class="question">41. Défi 41 - Partie 2 : Question exemple 41</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 41')">Bonne réponse 41</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 41. Voir Page 76.')">Mauvaise réponse 41</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu42" class="jeu">
+    <div class="question">42. Défi 42 - Partie 2 : Question exemple 42</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 42')">Bonne réponse 42</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 42. Voir Page 77.')">Mauvaise réponse 42</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu43" class="jeu">
+    <div class="question">43. Défi 43 - Partie 2 : Question exemple 43</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 43. Voir Page 78.')">Mauvaise réponse 43</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 43')">Bonne réponse 43</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu44" class="jeu">
+    <div class="question">44. Défi 44 - Partie 2 : Question exemple 44</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 44')">Bonne réponse 44</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 44. Voir Page 79.')">Mauvaise réponse 44</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu45" class="jeu">
+    <div class="question">45. Défi 45 - Partie 2 : Question exemple 45</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 45. Voir Page 80.')">Mauvaise réponse 45</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 45')">Bonne réponse 45</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu46" class="jeu">
+    <div class="question">46. Défi 46 - Partie 2 : Question exemple 46</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 46')">Bonne réponse 46</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 46. Voir Page 81.')">Mauvaise réponse 46</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu47" class="jeu">
+    <div class="question">47. Défi 47 - Partie 2 : Question exemple 47</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 47')">Bonne réponse 47</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 47. Voir Page 82.')">Mauvaise réponse 47</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu48" class="jeu">
+    <div class="question">48. Défi 48 - Partie 2 : Question exemple 48</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 48')">Bonne réponse 48</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 48. Voir Page 83.')">Mauvaise réponse 48</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu49" class="jeu">
+    <div class="question">49. Défi 49 - Partie 2 : Question exemple 49</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 49')">Bonne réponse 49</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 49. Voir Page 84.')">Mauvaise réponse 49</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu50" class="jeu">
+    <div class="question">50. Défi 50 - Partie 2 : Question exemple 50</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 50. Voir Page 85.')">Mauvaise réponse 50</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 50')">Bonne réponse 50</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu51" class="jeu">
+    <div class="question">51. Défi 51 - Partie 2 : Question exemple 51</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 51')">Bonne réponse 51</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 51. Voir Page 86.')">Mauvaise réponse 51</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu52" class="jeu">
+    <div class="question">52. Défi 52 - Partie 2 : Question exemple 52</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 52')">Bonne réponse 52</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 52. Voir Page 87.')">Mauvaise réponse 52</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu53" class="jeu">
+    <div class="question">53. Défi 53 - Partie 2 : Question exemple 53</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 53. Voir Page 88.')">Mauvaise réponse 53</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 53')">Bonne réponse 53</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu54" class="jeu">
+    <div class="question">54. Défi 54 - Partie 2 : Question exemple 54</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 54')">Bonne réponse 54</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 54. Voir Page 89.')">Mauvaise réponse 54</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu55" class="jeu">
+    <div class="question">55. Défi 55 - Partie 2 : Question exemple 55</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 55. Voir Page 90.')">Mauvaise réponse 55</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 55')">Bonne réponse 55</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu56" class="jeu">
+    <div class="question">56. Défi 56 - Partie 2 : Question exemple 56</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 56. Voir Page 91.')">Mauvaise réponse 56</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 56')">Bonne réponse 56</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu57" class="jeu">
+    <div class="question">57. Défi 57 - Partie 2 : Question exemple 57</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 57. Voir Page 92.')">Mauvaise réponse 57</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 57')">Bonne réponse 57</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu58" class="jeu">
+    <div class="question">58. Défi 58 - Partie 2 : Question exemple 58</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 58. Voir Page 93.')">Mauvaise réponse 58</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 58')">Bonne réponse 58</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu59" class="jeu">
+    <div class="question">59. Défi 59 - Partie 2 : Question exemple 59</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 59. Voir Page 94.')">Mauvaise réponse 59</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 59')">Bonne réponse 59</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu60" class="jeu">
+    <div class="question">60. Défi 60 - Partie 2 : Question exemple 60</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 60. Voir Page 95.')">Mauvaise réponse 60</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 60')">Bonne réponse 60</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu61" class="jeu">
+    <div class="question">61. Défi 61 - Partie 2 : Question exemple 61</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 61')">Bonne réponse 61</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 61. Voir Page 96.')">Mauvaise réponse 61</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu62" class="jeu">
+    <div class="question">62. Défi 62 - Partie 2 : Question exemple 62</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 62. Voir Page 97.')">Mauvaise réponse 62</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 62')">Bonne réponse 62</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu63" class="jeu">
+    <div class="question">63. Défi 63 - Partie 2 : Question exemple 63</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 63')">Bonne réponse 63</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 63. Voir Page 98.')">Mauvaise réponse 63</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu64" class="jeu">
+    <div class="question">64. Défi 64 - Partie 2 : Question exemple 64</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 64. Voir Page 99.')">Mauvaise réponse 64</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 64')">Bonne réponse 64</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu65" class="jeu">
+    <div class="question">65. Défi 65 - Partie 2 : Question exemple 65</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 65')">Bonne réponse 65</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 65. Voir Page 100.')">Mauvaise réponse 65</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu66" class="jeu">
+    <div class="question">66. Défi 66 - Partie 2 : Question exemple 66</div>
+    <div class="options">
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 66')">Bonne réponse 66</button>
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 66. Voir Page 101.')">Mauvaise réponse 66</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu67" class="jeu">
+    <div class="question">67. Défi 67 - Partie 2 : Question exemple 67</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 67. Voir Page 102.')">Mauvaise réponse 67</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 67')">Bonne réponse 67</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu68" class="jeu">
+    <div class="question">68. Défi 68 - Partie 2 : Question exemple 68</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 68. Voir Page 103.')">Mauvaise réponse 68</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 68')">Bonne réponse 68</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu69" class="jeu">
+    <div class="question">69. Défi 69 - Partie 2 : Question exemple 69</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 69. Voir Page 104.')">Mauvaise réponse 69</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 69')">Bonne réponse 69</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+  <div id="jeu70" class="jeu">
+    <div class="question">70. Défi 70 - Partie 2 : Question exemple 70</div>
+    <div class="options">
+      <button onclick="valider(this, false, 'Faux. La bonne réponse est : Bonne réponse 70. Voir Page 105.')">Mauvaise réponse 70</button>
+      <button onclick="valider(this, true, 'Bonne réponse : Bonne réponse 70')">Bonne réponse 70</button>
+    </div>
+    <div class="resultat"></div>
+    <a href="#" class="retour" onclick="retourMenu()">⬅️ Retour au menu</a>
+  </div>
+
+
+<script>
+  let score = 0;
+
+  function afficherJeu(id) {
+    document.querySelectorAll('.jeu').forEach(j => j.classList.remove('visible'));
+    const cible = document.getElementById(id);
+    if (cible) {
+      cible.classList.add('visible');
+    }
+  }
+
+  function valider(btn, bonneReponse, message) {
+    const result = btn.parentElement.parentElement.querySelector('.resultat');
+    if (!result) return;
+    if (bonneReponse) {
+      result.textContent = "✅ " + message;
+      result.style.color = "#2ecc71";
+      score++;
+      document.getElementById("score").textContent = score;
+    } else {
+      result.textContent = "❌ " + message;
+      result.style.color = "#e74c3c";
+    }
+  }
+
+  function retourMenu() {
+    document.querySelectorAll('.jeu').forEach(j => j.classList.remove('visible'));
+  }
+</script>
+
+</body>
+</html>
